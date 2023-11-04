@@ -14,6 +14,6 @@ public class Admin
     private int id;
     private String name;
     private String email;
-    private String genger;
+    private String gender;
     private  int age;
 }
