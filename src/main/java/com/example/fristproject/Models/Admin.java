@@ -9,11 +9,10 @@ import lombok.NoArgsConstructor;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class Admin
-{
+public class Admin {
     private int id;
     private String name;
     private String email;
     private String gender;
-    private  int age;
+    private int age;
 }

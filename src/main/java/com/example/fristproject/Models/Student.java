@@ -9,11 +9,10 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class Student
-{
+public class Student {
     private int id;
     private String name;
     private String email;
     private String gender;
-    private  int age;
+    private int age;
 }
