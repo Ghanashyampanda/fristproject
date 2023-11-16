@@ -14,5 +14,6 @@ public class Student {
     private String name;
     private String email;
     private String gender;
+    private  int roll;
     private int age;
 }
