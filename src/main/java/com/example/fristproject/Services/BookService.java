@@ -1,19 +1,19 @@
 package com.example.fristproject.Services;
 
-import com.example.fristproject.Exceptions.AdminAlreadyPresent;
-import com.example.fristproject.Models.Admin;
-import com.example.fristproject.Repository.AdminRepository;
+import com.example.fristproject.Exceptions.BookAlreadyPresent;
+import com.example.fristproject.Models.Book;
+import com.example.fristproject.Repository.BookRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.Optional;
 
 @Service
-public class AdminService {
+public class BookService {
     @Autowired
-    AdminRepository adminRepository;
-    public void addAdmin(Admin admin) throws AdminAlreadyPresent {
-        Optional<Admin> adminOptional = adminRepository.addAdmin(admin);
-        if(adminOptional.isEmpty())throw new AdminAlreadyPresent("admin already present");
+    BookRepository bookRepository;
+    public void addBook(Book book) throws BookAlreadyPresent {
+        Optional<Book> bookOptional = bookRepository.addBook(book);
+        if(bookOptional.isEmpty())throw new BookAlreadyPresent("book already present");
     }
 }

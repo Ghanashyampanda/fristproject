@@ -1,16 +1,17 @@
 package com.example.fristproject.Repository;
 
-import com.example.fristproject.Exceptions.AdminAlreadyPresent;
-import com.example.fristproject.Models.Admin;
+import com.example.fristproject.Models.Book;
+import org.springframework.stereotype.Repository;
 
 import java.util.HashMap;
 import java.util.Optional;
-public class AdminRepository {
-    private HashMap<Integer, Admin> adminMap = new HashMap<>();
-    public Optional<Admin> addAdmin(Admin admin){
-        if(!adminMap.containsKey(admin.getId())){
-            adminMap.put(admin.getId(), admin);
-            return Optional.of(admin);
+@Repository
+public class BookRepository {
+    private HashMap<Integer, Book> bookMap = new HashMap<>();
+    public Optional<Book> addBook(Book book){
+        if(!bookMap.containsKey(book.getId())){
+            bookMap.put(book.getId(), book);
+            return Optional.of(book);
         }
         return Optional.empty();
     }

@@ -1,7 +1,7 @@
 package com.example.fristproject.Exceptions;
 
-public class AdminAlreadyPresent extends Exception{
-    public AdminAlreadyPresent(String message) {
+public class BookAlreadyPresent extends Exception{
+    public BookAlreadyPresent(String message) {
         super(message);
     }
 }
